@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_celery_results',
 
     'main',
+    'event',
 ]
 
 CELERY_RESULT_BACKEND = "django-db"
