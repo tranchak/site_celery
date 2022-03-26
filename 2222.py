@@ -1,10 +1,19 @@
-def go():
-    return 100
+# def go():
+#     return 100
+#
+#
+# def fn(c=go()):
+#     print(111,c)
+#
+#
+#
+# fn()
 
 
-def fn(c=go()):
-    print(111,c)
+class A:
+    a=100
+    def __init__(self, k):
+        self.k=k
 
-
-
-fn()
+print(getattr(A, 'a'))
+print(A.__getattribute__(A,'a'))
